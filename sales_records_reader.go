@@ -50,7 +50,12 @@ func main() {
 			log.Fatal("Record, error: %v, %v", value, err)
 
 		}
-
+		//change order_date
+		new_order_date := rec[5]
+		rec[5] = new_order_date
+		//change ship date
+		new_ship_date := rec[7]
+		rec[7] = new_ship_date
 		// calculate scores; THIS EXTERNAL METHOD CANNOT BE CHANGED
 		score := 1.0
 
